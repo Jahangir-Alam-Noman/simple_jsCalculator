@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-5xl font-semibold text-center pt-8">Let's Get <span class="text-purple-600">Calculation</span>
+            !!!</h1>
+    </header>
+    <main class="mx-auto w-5/6">
+        <section class="pt-4">
+            <div class="grid grid-cols-4 gap-4 text-center text-white p-8">
+                <div class="bg-green-400 p-8 rounded">
+                    <h3 class="text-3xl">Addition</h3>
+                    <h2 class="text-4xl">$ <span id="add">00</span> </h2>
+                </div>
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-3xl">Subtraction</h3>
+                    <h2 class="text-4xl">$ <span id="subtraction">00</span> </h2>
+                </div>
+                <div class="bg-pink-400 p-8 rounded">
+                    <h3 class="text-3xl">Multiplication</h3>
+                    <h2 class="text-4xl">$ <span id="multiplication">00</span> </h2>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h3 class="text-3xl">Division</h3>
+                    <h2 class="text-4xl">$ <span id="division">00</span> </h2>
+                </div>
+            </div>
+
+        </section>
+        <section class="w-2/4 mx-auto">
+            <div class="grid grid-cols-1  p-8">
+                <div class="bg-purple-600 bg-opacity-75 p-8 rounded">
+                    <input type="text" id="first_input" class="block m-4 p-2  " placeholder="Enter Your First Value">
+                    <input type="text" id="second_input" class="block m-4 p-2" placeholder="Enter Your Second Value">
+                    <button id="calculate_button"
+                        class="bg-red-500 hover:bg-red-700 p-2 m-4 font-semibold">Calculate</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
